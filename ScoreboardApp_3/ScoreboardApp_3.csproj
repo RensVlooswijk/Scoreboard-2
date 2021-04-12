@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{89CACE9C-DB4F-4700-B9FD-0BA9E1943671}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ScoreboardApp_3</RootNamespace>
+    <AssemblyName>ScoreboardApp_3</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CounterAlgorithms.cs" />
+    <Compile Include="CounterPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CounterPage.Designer.cs">
+      <DependentUpon>CounterPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CounterTennis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CounterTennis.Designer.cs">
+      <DependentUpon>CounterTennis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseConnection.cs" />
+    <Compile Include="dbi466388MatchHistoryDatatable.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbi466388MatchHistoryDatatable.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MatchHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MatchHistory.Designer.cs">
+      <DependentUpon>MatchHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Leaderboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Leaderboard.Designer.cs">
+      <DependentUpon>Leaderboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MatchHistoryDataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MatchHistoryDataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MatchHistoryDatatable.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MatchHistoryDatatable.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MyTeam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyTeam.Designer.cs">
+      <DependentUpon>MyTeam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Scores.cs">
+      <DependentUpon>Scores.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Scores.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Scores.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TeamMemberList.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TeamMemberList.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TennisMatchHistory.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TennisMatchHistory.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VoiceControl.cs" />
+    <EmbeddedResource Include="CounterPage.resx">
+      <DependentUpon>CounterPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CounterTennis.resx">
+      <DependentUpon>CounterTennis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MatchHistory.resx">
+      <DependentUpon>MatchHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Leaderboard.resx">
+      <DependentUpon>Leaderboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyTeam.resx">
+      <DependentUpon>MyTeam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="dbi466388MatchHistoryDatatable.xsc">
+      <DependentUpon>dbi466388MatchHistoryDatatable.xsd</DependentUpon>
+    </None>
+    <None Include="dbi466388MatchHistoryDatatable.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbi466388MatchHistoryDatatable.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbi466388MatchHistoryDatatable.xss">
+      <DependentUpon>dbi466388MatchHistoryDatatable.xsd</DependentUpon>
+    </None>
+    <None Include="MatchHistoryDataset.xsc">
+      <DependentUpon>MatchHistoryDataset.xsd</DependentUpon>
+    </None>
+    <None Include="MatchHistoryDataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MatchHistoryDataset.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MatchHistoryDataset.xss">
+      <DependentUpon>MatchHistoryDataset.xsd</DependentUpon>
+    </None>
+    <None Include="MatchHistoryDatatable.xsc">
+      <DependentUpon>MatchHistoryDatatable.xsd</DependentUpon>
+    </None>
+    <None Include="MatchHistoryDatatable.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MatchHistoryDatatable.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MatchHistoryDatatable.xss">
+      <DependentUpon>MatchHistoryDatatable.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Scores.xsc">
+      <DependentUpon>Scores.xsd</DependentUpon>
+    </None>
+    <None Include="Scores.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Scores.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Scores.xss">
+      <DependentUpon>Scores.xsd</DependentUpon>
+    </None>
+    <None Include="TeamMemberList.xsc">
+      <DependentUpon>TeamMemberList.xsd</DependentUpon>
+    </None>
+    <None Include="TeamMemberList.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TeamMemberList.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TeamMemberList.xss">
+      <DependentUpon>TeamMemberList.xsd</DependentUpon>
+    </None>
+    <None Include="TennisMatchHistory.xsc">
+      <DependentUpon>TennisMatchHistory.xsd</DependentUpon>
+    </None>
+    <None Include="TennisMatchHistory.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TennisMatchHistory.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TennisMatchHistory.xss">
+      <DependentUpon>TennisMatchHistory.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
